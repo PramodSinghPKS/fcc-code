@@ -6,5 +6,7 @@ Build a technical documentation page to serve as instruction or reference for a 
 
 **Objective**: Build an app that is functionally similar to https://technical-documentation-page.freecodecamp.rocks
 
+My solution: [JS Documentation](https://fcc-documentation-project.netlify.app)
+
 This project is built using **HTML** and **CSS**.
 
