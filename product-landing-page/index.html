@@ -6,15 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Original Trombones</title>
     <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+    crossorigin="anonymous">
 </head>
 <body>
     <header>
-        <div><img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png" alt="original trombones logo"></div>
-        <nav>
+        <div id="logo"><img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png" alt="original trombones logo"></div>
+        <nav id="navbar">
             <ul>
-                <li>Features</li>
-                <li>How It Works</li>
-                <li>Pricing</li>
+                <li class="nav-items"><a href="">Features</a></li>
+                <li class="nav-items"><a href="">How It Works</a></li>
+                <li class="nav-items"><a href="">Pricing</a></li>
             </ul>
         </nav>
     </header>
@@ -29,27 +32,33 @@
         <section id="features">
             <ul>
                 <li>
-                    <img src="" alt="">
+                    <i class="fa fa-3x fa-fire"></i>
+                    <div class="description">
                     <h2>Premium Materials</h2>
                     <p>Our trombones use the shiniest brass which is sourced locally. This will increase the logevity of your purchase</p>
+                </div>
                 </li>
                 <li>
-                    <img src="" alt="">
+                    <i class="fa fa-3x fa-truck"></i>
+                <div class="description">
                     <h2>Fast Shipping</h2>
                     <p>We make sure you recieve your trombone as soon as we have finished making it. We also provide free returns if your are not satisfied.</p>
+                </div>
                 </li>
                 <li>
-                    <img src="" alt="">
+                    <i class="fa fa-3x fa-battery-full"></i>
+                    <div class="description">
                     <h2>Quality Assurance</h2>
                     <p>For every purchase you make, we  will ensure there are no damages or faults and we will check adn test the pitch of your instrument.</p>
+                </div>
                 </li>
             </ul>
         </section>
         <section id="how_it_works">
-            <video src=""></video>
+            <iframe src="https://www.youtube.com/watch?v=y8Yv4pnO7qc"></iframe>
         </section>
         <section id="products">
-            <div class="item-1">
+            <div class="item">
                 <h2>TENOR TROMBONE</h2>
                 <p class="price">$600</p>
                 <p>Lorem ipsum.</p>
@@ -58,7 +67,7 @@
                 <p>Lorem ipsum.</p>
                 <button>SELECT</button>
             </div>
-            <div class="item-2">
+            <div class="item">
                 <h2>BASS TROMBONE</h2>
                 <p class="price">$900</p>
                 <p>Lorem ipsum.</p>
@@ -67,7 +76,7 @@
                 <p>Lorem ipsum.</p>
                 <button>SELECT</button>
             </div>
-            <div class="item-3">
+            <div class="item">
                 <h2>VALVE TROMBONE</h2>
                 <p class="price">$1200</p>
                 <p>Plays similar to a Trumpet</p>
