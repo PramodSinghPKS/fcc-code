@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
 
 body,
@@ -9,7 +9,7 @@ h2,
 p {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: 'Poppins', sans-serif;
   color: white;
 }
 
@@ -20,18 +20,22 @@ body {
 a {
   text-decoration: none;
   color: white;
-  margin-right: 2em;
 }
 
 #navbar {
-  height: 10vh;
-  width: 100%;
-  background-color: brown;
-  position: fixed;
-  top: 0;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
+    height: 10vh;
+    width: 100%;
+    background-color: brown;
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#navbar a {
+    
+    margin-right: 2em;
 }
 
 #welcome-section {
@@ -67,7 +71,7 @@ a {
 
 #projects hr {
   border-color: white;
-  width: 75%;
+  width: 24em;
   margin-top: 0.1em;
 }
 
@@ -78,8 +82,16 @@ a {
   margin: 2em auto;
 }
 
+.project-link {
+    display: inline-block;
+    background-color: yellow;
+    width: 100%;
+    min-height: 20em;
+}
+
 #projects .project-tile {
-  min-height: 20em;
+  height: 100%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -87,18 +99,38 @@ a {
   cursor: pointer;
 }
 
-#projects span {
-  color: #222;
-}
 
-#projects .project-tile:hover span {
-  color: red;
-}
+
 
 #projects .project-image {
   height: 80%;
   width: 100%;
-  background: linear-gradient(45deg, cyan, white);
+  /* background: linear-gradient(45deg, cyan, white); */
+}
+
+.first-project {
+    background: url(./images/tribute.png);    
+    background-size: cover;
+    background-position: center;
+}
+
+.second-project {
+    background: url(./images/js-docs.png);    
+    background-color: white;
+    background-size:100%;
+    overflow: hidden;
+}
+
+.third-project {
+    background: url(./images/product.png);  
+    background-size: cover;
+    background-position: center;  
+}
+
+.fourth-project {
+    background: url(./images/product-page.png);    
+    background-size: cover;
+    background-position: center;
 }
 
 #projects .project-title {
@@ -107,7 +139,20 @@ a {
   text-align: center;
 }
 
+#projects span {
+    color: brown;
+    font-weight: bolder;
+    font-size: larger;
+    opacity: 0;
+  }
+  
+  #projects .project-tile:hover span {
+    opacity: 1;
+    transition: opacity 300ms ease-in-out;
+  }
+
 #profile-link {
+    display: block;
   text-align: center;
   width: 8em;
   padding: 0.8em;
@@ -119,6 +164,9 @@ a {
   color: white;
   font-weight: bold;
   display: inline-block;
+  opacity: 1;
+  font-size: normal;
+  font-weight: normal;
 }
 
 #profile-link:hover {
@@ -159,11 +207,26 @@ a {
 }
 
 .social-media-links a:hover {
-  transform: translate(0, 15px);
+  transform: translate(0, 10px);
   transition: transform 300ms ease-in-out;
 }
 
 footer {
-  padding-block: 2em;
+  padding-block: 3em;
+  border-top: 3px solid brown;
   text-align: center;
+}
+
+footer a:hover {
+    color: brown;
+}
+
+@media screen and (min-width: 600px){
+    .container {
+        max-width: 80vh;
+    }
+
+    .social-media-links {
+        margin-inline: auto;
+    }
 }
