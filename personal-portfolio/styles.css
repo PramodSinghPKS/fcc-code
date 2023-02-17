@@ -19,7 +19,6 @@ body {
 
 a {
   text-decoration: none;
-
 }
 
 #navbar {
@@ -157,6 +156,7 @@ a {
   padding: 0.8em;
   background-color: #222;
   margin: 0 auto;
+  color: white;
 }
 
 #profile-link span {
@@ -197,12 +197,13 @@ a {
   max-width: 800px;
   display: flex;
   flex-wrap: wrap;
-    justify-content: space-around;
+  justify-content: space-around;
 }
 
 .social-media-links a {
     margin: 0;
     padding: .3em;
+    color: white;
 }
 
 .social-media-links a:hover {
