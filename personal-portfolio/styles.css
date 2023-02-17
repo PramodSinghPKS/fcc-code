@@ -19,7 +19,7 @@ body {
 
 a {
   text-decoration: none;
-  color: white;
+
 }
 
 #navbar {
@@ -35,6 +35,7 @@ a {
 
 #navbar a {
     margin-right: 2em;
+    color: white;
 }
 
 #welcome-section {
