@@ -23,7 +23,7 @@ a {
 }
 
 #navbar {
-    height: 10vh;
+    height: 4rem;
     width: 100%;
     background-color: brown;
     position: fixed;
@@ -34,7 +34,6 @@ a {
 }
 
 #navbar a {
-    
     margin-right: 2em;
 }
 
@@ -61,7 +60,7 @@ a {
 
 #projects {
   background-color: #005f73;
-  padding: 12vh 2em 4em;
+  padding: 3em;
 }
 
 #projects h2 {
@@ -84,14 +83,12 @@ a {
 
 .project-link {
     display: inline-block;
-    background-color: yellow;
     width: 100%;
     min-height: 20em;
 }
 
 #projects .project-tile {
   height: 100%;
-  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -104,12 +101,13 @@ a {
   height: 80%;
   width: 100%;
   /* background: linear-gradient(45deg, cyan, white); */
+  border: 0.5px solid black;
 }
 
 .first-project {
     background: url(./images/tribute.png);    
     background-size: cover;
-    background-position: center;
+    background-position: center top;
 }
 
 .second-project {
@@ -122,13 +120,15 @@ a {
 .third-project {
     background: url(./images/product.png);  
     background-size: cover;
-    background-position: center;  
+    background-position: center top;  
 }
 
 .fourth-project {
     background: url(./images/portfolio.png);    
-    /* background-size: cover; */
-    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center top;
+
 }
 
 #projects .project-title {
